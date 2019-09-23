@@ -30,7 +30,9 @@ class Song
   end
 
   def self.genre_count
-    @@genres
+    new_array = []
+
+    @@genres.each do |names|
   end
 
   def self.artist_count
