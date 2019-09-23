@@ -30,9 +30,9 @@ class Song
   end
 
   def self.genre_count
-    hash_genres = {}
+    hash_genres = {} # First, we create a new hash that is empty
 
-    @@genres.each do |uniq_genre|
+    @@genres.each do |uniq_genre| # We iterate through our array and check each value
       if hash_genres[uniq_genre]
         hash_genres[uniq_genre] += 1
       else
@@ -43,7 +43,16 @@ class Song
   end
 
   def self.artist_count
-    @@artists
+    hash_artists = {}
+
+    @@artists.each do |uniq_artist|
+      if hash_artists[uniq_artist]
+        hash_artists[uniq_artist] += 1
+      else
+        hash_artists[uniq_artist] = 1
+      end
+    end
+    hash_artists
   end
 
 end
