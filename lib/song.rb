@@ -37,6 +37,8 @@ class Song
         hash_genres[uniq_genre]
       end
 
+      hash_genres
+
     end
 
   end
