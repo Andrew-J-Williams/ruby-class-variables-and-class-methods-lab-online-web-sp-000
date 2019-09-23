@@ -26,7 +26,14 @@ class Song
   end
 
   def self.genres
-    @@genres
+    genre_numbers = []
+
+    @@genres.each do |x|
+      genre_numbers << x unless @@genres.any? {|name| name == @genre}
+    end
+
+    genre_numbers
+
   end
 
   def self.genre_count
