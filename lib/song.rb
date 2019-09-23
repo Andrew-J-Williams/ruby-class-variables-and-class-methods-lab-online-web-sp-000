@@ -30,8 +30,8 @@ class Song
   end
 
   def self.genre_count
-    @@genres.uniq 
-    end
+    @@genres.uniq
+  end
 
     new_array
   end
