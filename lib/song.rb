@@ -22,7 +22,7 @@ class Song
   end
 
   def self.artists
-    @@artists.uniq
+    @@artists.uniq # The dot method 'uniq' searches through our array and returns only unique values with no duplicates.
   end
 
   def self.genres
