@@ -42,7 +42,7 @@ class Song
     hash_genres # We return the values of the hash following our iteration
   end
 
-  def self.artist_count
+  def self.artist_count # Simply repeat the same process as we did for the .genre_count
     hash_artists = {}
 
     @@artists.each do |uniq_artist|
