@@ -33,8 +33,10 @@ class Song
     hash_genres = {}
 
     @@genres.each do |uniq_genre|
-      if hash_genres.include?(uniq_genre) == false
-        hash_genres[uniq_genre]
+      if hash_genres[uniq_genre]
+        hash_genres[uniq_genre] += 1
+      else
+        hash_genres[uniq_genre] = 1
       end
 
       hash_genres
