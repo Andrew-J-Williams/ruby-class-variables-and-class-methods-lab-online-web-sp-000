@@ -22,18 +22,15 @@ class Song
   end
 
   def self.artists
-    @@artists
+    @@artists.uniq
   end
 
   def self.genres
-    @@genres
-  end
-
-  def self.genre_count
     @@genres.uniq
   end
 
-    new_array
+  def self.genre_count
+    @@genres
   end
 
   def self.artist_count
