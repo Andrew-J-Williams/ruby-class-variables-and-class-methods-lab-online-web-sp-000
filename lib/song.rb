@@ -34,12 +34,12 @@ class Song
 
     @@genres.each do |uniq_genre| # We iterate through our array and check each value
       if hash_genres[uniq_genre]
-        hash_genres[uniq_genre] += 1
+        hash_genres[uniq_genre] += 1 # If the key of the genre already exists, we add to the current value by 1
       else
-        hash_genres[uniq_genre] = 1
+        hash_genres[uniq_genre] = 1 # If the key of the genre does not exist, we create the key and set it equal to 1
       end
     end
-    hash_genres
+    hash_genres # We return the values of the hash following our iteration
   end
 
   def self.artist_count
