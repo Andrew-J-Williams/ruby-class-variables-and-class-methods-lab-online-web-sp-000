@@ -13,7 +13,7 @@ class Song
     @genre = genre
 
     @@count += 1
-    @@artists << @artist
+    @@artists << @artist unless @@artists.any? {|x| x == @artist}
     @@genres << @genre
   end
 
