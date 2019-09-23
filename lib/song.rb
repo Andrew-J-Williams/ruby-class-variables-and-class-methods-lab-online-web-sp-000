@@ -13,8 +13,8 @@ class Song
     @genre = genre
 
     @@count += 1
-    @@artists << @artist 
-    @@genres << @genre
+    @@artists << @artist unless @@artists.any? {|x| x == @artist}
+    @@genres << @genre unless @@genres.any? {|y| y == @genre}
   end
 
   def self.count
