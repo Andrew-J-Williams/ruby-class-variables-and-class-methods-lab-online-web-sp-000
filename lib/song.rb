@@ -2,7 +2,7 @@ class Song
 
   attr_accessor :name, :artist, :genre # Our instance variables, each with predefined 'set' and 'get' methods
 
-  # Below are our 3 global variable.
+  # Below are our 3 global variable
   @@count = 0
   @@artists = []
   @@genres = []
