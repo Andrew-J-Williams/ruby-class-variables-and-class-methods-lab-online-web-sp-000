@@ -33,7 +33,7 @@ class Song
     hash_genres = {}
 
     @@genres.each do |uniq_genre|
-      
+      if hash_genres.include?(uniq_genre)
 
     end
 
