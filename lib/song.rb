@@ -1,6 +1,6 @@
 class Song
 
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :artist, :genre # Our instance variables, each with predefined 'set' and 'get' methods
 
   @@count = 0
   @@artists = []
