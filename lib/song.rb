@@ -33,7 +33,9 @@ class Song
     hash_genres = {}
 
     @@genres.each do |uniq_genre|
+      
 
+    end
 
   end
 
