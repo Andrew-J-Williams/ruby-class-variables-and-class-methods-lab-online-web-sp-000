@@ -33,6 +33,10 @@ class Song
     new_array = []
 
     @@genres.each do |names|
+      new_array << names unless new_array.any? {|x| x == names}
+    end
+
+    new_array
   end
 
   def self.artist_count
